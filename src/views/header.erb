@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Devops UI</title>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/shopatron-cdn-resources/global-resources/css/global.2.1.1.compiled.min.css" type="text/css">
+</head>
+<body>
+  <!-- sidebar -->
+  <div id="sidebar" class="medium-3 large-2 xlarge-1 columns">
+    <div class="sidebar">
+      <nav>
+        <% nav_bar.each do |item, links| %>
+            <h3><%= item %></h3>
+            <ul class="side-nav">
+              <% links.each do |display, link| %>
+                  <li><a href="<%= link %>"><%= display %></a></li>
+              <% end %>
+            </ul>
+        <% end %>
+      </nav>
+    </div>
+  </div>
+  <!-- end sidebar -->
